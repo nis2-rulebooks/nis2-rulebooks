@@ -18,7 +18,7 @@ The rulebooks are written in Markdown to make them easy to read, review, version
 
 To compile the document yourself, install the following requirements:
 
-* [Pandoc](https://pandoc.org/) 3.x
+* [Pandoc](https://pandoc.org/) >= 3.8
 * A LaTeX distribution that provides XeLaTeX (a full TeX Live installation is the simplest option; on Debian or Ubuntu, install `texlive-full`)
 * The [Eisvogel Pandoc template](https://github.com/Wandmalfarbe/pandoc-latex-template)
 * Bash, to run the build script
@@ -39,6 +39,44 @@ bash tools/build.sh
 ```
 
 The script writes the generated PDF to `rulebooks/operational-guidance-incident-handling.pdf`.
+
+## Building the PDF with Docker container
+
+Clone git repo
+
+```bash
+git clone -c core.autocrlf=false https://github.com/nis2-rulebooks/nis2-rulebooks.git
+cd nis2-rulebooks
+```
+
+On Windows, generate PDF with PowerShell:
+
+```PowerShell
+docker run --rm `
+  --volume "${PWD}:/data" `
+  --workdir /data/tools `
+  --entrypoint /bin/bash `
+  pandoc/extra:3.10.0.0-ubuntu build.sh
+```
+
+On Debian, generate PDF with bash:
+
+```bash
+sudo docker run --rm \
+  --user "$(id -u):$(id -g)" \
+  --volume "$PWD:/data" \
+  --workdir /data/tools \
+  --entrypoint /bin/bash \
+  pandoc/extra:3.10.0.0-ubuntu build.sh
+```
+
+PDF are generated here:
+
+```
+tools/output.pdf
+rulebooks/operational-guidance-incident-handling.pdf
+```
+
 
 ## Maintainers
 

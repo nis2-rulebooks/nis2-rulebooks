@@ -13,7 +13,6 @@ header-includes:
   - \let\OldLongtable\longtable
   - \let\OldEndLongtable\endlongtable
   - \renewenvironment{longtable}{\rowcolors{1}{white}{lightgray}\OldLongtable}{\OldEndLongtable}
-  - \newcounter{none}
 ---
 
 # Operational guidance for incident handling
