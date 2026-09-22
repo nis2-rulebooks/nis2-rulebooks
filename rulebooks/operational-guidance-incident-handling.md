@@ -1,7 +1,7 @@
 ---
 title: "Operational Guidance For Incident Handling"
 author: [ANSSI, CSSF, CIRCL, GOVCERT, HCPN, ILR]
-date: "2026-06-22"
+date: "2026-09-28"
 keywords: [nis2]
 titlepage: true
 footnotes-pretty: true
@@ -22,7 +22,7 @@ header-includes:
 
 **Version:** 1.0 (stable)
 
-**Date:** 19 Juin 2026
+**Date:** 28 September 2026
 
 **Authors:**
 
