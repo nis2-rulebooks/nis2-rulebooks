@@ -13,7 +13,7 @@ header-includes:
   - \let\OldLongtable\longtable
   - \let\OldEndLongtable\endlongtable
   - \renewenvironment{longtable}{\rowcolors{1}{white}{lightgray}\OldLongtable}{\OldEndLongtable}
-  - \ifcsname c@none\endcsname\else\newcounter
+  - \ifcsname c@none\endcsname\else\newcounter{none}\fi
 ---
 
 # Operational guidance for incident handling
