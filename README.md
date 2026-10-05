@@ -203,6 +203,21 @@ Suggested attribution:
 > Based on the NIS2 Incident Rulebooks maintained by the NIS2 authorities and NIS2 CSIRTs available at [https://github.com/nis2-rulebooks/nis2-rulebooks](https://github.com/nis2-rulebooks/nis2-rulebooks). Licensed under CC-BY 4.0.
 
 
+## Related resources
+
+Community-maintained material built on these rulebooks. Entries are listed
+for convenience; inclusion is not an endorsement by the maintainers, and the
+rulebooks remain the authoritative guidance.
+
+* **Machine-readable counterparts.** A crosswalk from each rulebook section
+  (typical initial detection, immediate response, investigation steps,
+  remediation, evidence keeping, post-incident activity, communication) to
+  open-source CACAO 2.0 playbooks that an orchestrator can run, with the
+  sections no playbook covers yet marked as gaps. Maintained by the SecOps-NG
+  project under Apache-2.0, pinned to a revision of this repository, and
+  carrying the attribution requested above:
+  <https://github.com/secops-ng/secops-ng-framework/blob/main/content/mappings/nis2/incident-handling-rulebooks.md>
+
 ## Security and Responsible Disclosure
 
 This repository is intended to support incident handling and cybersecurity coordination.
